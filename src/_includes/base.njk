@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="/" class="site-title">{{ site.title }}</a>
+            <a href="{{ '/' | url }}" class="site-title">{{ site.title }}</a>
             <nav>
                 <ul>
                     {% for item in site.navigation %}
-                    <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+                    <li><a href="{{ item.url | url }}">{{ item.text }}</a></li>
                     {% endfor %}
                 </ul>
             </nav>

@@ -23,6 +23,7 @@ module.exports = function(eleventyConfig) {
             includes: "_includes",
             output: "_site"
         },
+        pathPrefix: "/broad-sky-tax/",
         markdownTemplateEngine: "njk",
         htmlTemplateEngine: "njk",
         dataTemplateEngine: "njk",
