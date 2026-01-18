@@ -1,10 +1,14 @@
-const path = require('path');
-const siteData = require('./website-spec.json');
-const { DateTime } = require('luxon');
-const htmlmin = require("html-minifier");
-const env = require('./src/_data/env.js');
+import path from 'path';
+import { DateTime } from 'luxon';
+import htmlmin from 'html-minifier';
+import env from './src/_data/env.js';
 
-module.exports = function(eleventyConfig) {
+// Load site data - since it's JSON and we are in ESM, we can use a dynamic import or readFileSync
+// For simplicity and compatibility with standard ESM, we'll use fs
+import fs from 'fs';
+const siteData = JSON.parse(fs.readFileSync(new URL('./website-spec.json', import.meta.url)));
+
+export default function(eleventyConfig) {
     // Set input and output directories
     eleventyConfig.addPassthroughCopy("src/assets");
 

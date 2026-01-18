@@ -1,23 +1,27 @@
-const autoprefixer = require('autoprefixer');
-const cssnanoPlugin = require('cssnano');
-const fs = require('fs');
-const path = require('path');
-const postcss = require('postcss');
-const postcssImport = require('postcss-import');
-const tailwind = require('tailwindcss');
-const tailwindConfig = require('../../tailwind.config.cjs');
+import autoprefixer from 'autoprefixer'
+import cssnanoPlugin from 'cssnano'
+import fs from 'fs'
+import path from 'path'
+import postcss from 'postcss'
+import postcssImport from 'postcss-import'
+import tailwind from 'tailwindcss'
+import tailwindConfig from '../../tailwind.config.js'
+import { fileURLToPath } from 'url'
 
-module.exports = class {
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+export default class {
   async data() {
-    const cssDir = path.join(__dirname, '..', '_includes', 'css');
-    const rawFilepath = path.join(cssDir, '_page.css');
+    const cssDir = path.join(__dirname, '..', '_includes', 'css')
+    const rawFilepath = path.join(cssDir, '_page.css')
 
     return {
       permalink: `css/page.css`,
       rawFilepath,
       rawCss: fs.readFileSync(rawFilepath),
       excludeFromSitemap: true
-    };
+    }
   }
 
   async render({ rawCss, rawFilepath }) {
@@ -28,6 +32,6 @@ module.exports = class {
       autoprefixer
     ])
       .process(rawCss, { from: rawFilepath })
-      .then((result) => result.css);
+      .then((result) => result.css)
   }
-};
+}

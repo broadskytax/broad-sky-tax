@@ -1,1 +1,3 @@
-module.exports = { baseUrl: '/broad-sky-tax/' };
+export default {
+  baseUrl: '/broad-sky-tax/'
+};
