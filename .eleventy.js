@@ -1,6 +1,8 @@
 const path = require('path');
 const siteData = require('./website-spec.json');
 const { DateTime } = require('luxon');
+const htmlmin = require("html-minifier");
+const env = require('./src/_data/env.js');
 
 module.exports = function(eleventyConfig) {
     // Set input and output directories
@@ -11,11 +13,28 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addGlobalData("pages", siteData.pages);
     eleventyConfig.addGlobalData("team", siteData.team);
     eleventyConfig.addGlobalData("currentYear", DateTime.now().toFormat('yyyy'));
+    eleventyConfig.addGlobalData("env", env);
 
     // Add a custom Nunjucks date filter
     eleventyConfig.addNunjucksFilter("date", function (dateString, format) {
         return DateTime.fromJSDate(dateString).toFormat(format);
     });
+
+    eleventyConfig.addWatchTarget("./src/_includes/css/");
+
+    if (process.env.NODE_ENV === "production") {
+        eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+          if( outputPath && outputPath.endsWith(".html") ) {
+            let minified = htmlmin.minify(content, {
+              useShortDoctype: true,
+              removeComments: true,
+              collapseWhitespace: true
+            });
+            return minified;
+          }
+          return content;
+        });
+    }
 
     return {
         dir: {

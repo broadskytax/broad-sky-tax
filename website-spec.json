@@ -1,8 +1,15 @@
 {
   "site": {
     "title": "Broad Sky Tax",
+    "language": "en",
     "description": "Your trusted partner in tax preparation and financial consulting.",
     "logo": "/assets/images/logo.svg",
+    "author": "Broad Sky Tax",
+    "social": [
+      { "title": "Facebook", "url": "https://facebook.com" },
+      { "title": "Twitter", "url": "https://twitter.com" },
+      { "title": "Instagram", "url": "https://instagram.com" }
+    ],
     "navigation": [
       {
         "text": "Home",

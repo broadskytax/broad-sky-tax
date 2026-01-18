@@ -1,33 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.language }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  {% include "head.njk" %}
 </head>
-<body>
-    <header>
-        <div class="container">
-            <a href="{{ '/' | url }}" class="site-title">{{ site.title }}</a>
-            <nav>
-                <ul>
-                    {% for item in site.navigation %}
-                    <li><a href="{{ item.url | url }}">{{ item.text }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        {{ content | safe }}
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; {{ currentYear }} {{ site.title }}. All rights reserved.</p>
-        </div>
-    </footer>
+<body id="top" class="font-sans text-gray-800 bg-gray-100 flex flex-col min-h-screen">
+  <header class="w-full bg-white shadow-sm">
+    {% include "navbar.njk" %}
+  </header>
+  <main class="flex-grow container mx-auto px-4 py-8">
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %}
+  {% include "js.njk" %}
 </body>
 </html>
