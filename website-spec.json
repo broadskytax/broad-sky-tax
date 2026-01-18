@@ -1,0 +1,47 @@
+{
+  "site": {
+    "title": "Broad Sky Tax",
+    "description": "Your trusted partner in tax preparation and financial consulting.",
+    "logo": "/assets/images/logo.svg",
+    "navigation": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "About",
+        "url": "/about/"
+      },
+      {
+        "text": "Contact Us",
+        "url": "/contact/"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "path": "index.md",
+      "content": "<h1>Welcome to Broad Sky Tax</h1><p>Your trusted partner in tax preparation and financial consulting.</p>"
+    },
+    {
+      "name": "About",
+      "path": "about.md",
+      "content": "<h2>Our Team</h2><p>Our team of helpful tax accountants can help you with your individual and partnership tax returns. We are dedicated to providing you with the best service possible.</p>"
+    },
+    {
+      "name": "Contact Us",
+      "path": "contact.md",
+      "content": "<h2>Contact Us</h2><p>Have a question? Fill out the form below and we'll get back to you as soon as possible.</p>",
+      "google_form_embed_url": "https://docs.google.com/forms/d/e/1FAIpQLSd1A5-zTbm0QivUNpPg-4vvvoAMwXx1sv4z6I0VIWP6xwfyTQ/viewform"
+    }
+  ],
+  "team": {
+    "introduction": "Our team of helpful tax accountants can help you with your individual, partnership tax returns. We have a passion for helping our clients navigate the complexities of the tax code and achieve their financial goals. Our accountants are all certified and have years of experience in the field."
+  },
+  "tech_stack": {
+    "generator": "Eleventy",
+    "css": "basic-responsive-css",
+    "markdown_support": true
+  }
+}
