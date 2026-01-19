@@ -1,15 +1,11 @@
 ---
-layout: base.njk
+layout: page.njk
 title: Frequently Asked Questions
 permalink: /faq/
 ---
 
-<div class="max-w-4xl mx-auto">
-  <h1 class="text-4xl font-bold text-blue-600 mb-8">Frequently Asked Questions</h1>
-  
-  <div class="text-lg text-gray-700 leading-relaxed prose max-w-none">
-    {{ pages[3].content | safe }}
-  </div>
+<div class="prose max-w-none">
+  {{ pages[3].content | safe }}
 </div>
 
 <style>
