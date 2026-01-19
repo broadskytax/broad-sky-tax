@@ -3,7 +3,7 @@
     "title": "Broad Sky Tax",
     "language": "en",
     "description": "Your trusted partner in tax preparation and financial consulting.",
-    "logo": "/assets/images/logo.svg",
+    "logo": "/assets/images/Logo.jpg",
     "author": "Broad Sky Tax",
     "social": [
       { "title": "Facebook", "url": "https://facebook.com" },
@@ -18,6 +18,10 @@
       {
         "text": "About",
         "url": "/about/"
+      },
+      {
+        "text": "FAQ",
+        "url": "/faq/"
       },
       {
         "text": "Contact Us",
@@ -41,6 +45,11 @@
       "path": "contact.md",
       "content": "<h2>Contact Us</h2><p>Have a question? Fill out the form below and we'll get back to you as soon as possible.</p>",
       "google_form_embed_url": "https://docs.google.com/forms/d/e/1FAIpQLSd1A5-zTbm0QivUNpPg-4vvvoAMwXx1sv4z6I0VIWP6xwfyTQ/viewform"
+    },
+    {
+      "name": "FAQ",
+      "path": "faq.md",
+      "content": "<h2>Frequently Asked Questions</h2><ul><li><strong>What services do you offer?</strong> We offer individual and partnership tax preparation, as well as financial consulting.</li><li><strong>How can I contact you?</strong> You can contact us via the form on our Contact page.</li></ul>"
     }
   ],
   "team": {
