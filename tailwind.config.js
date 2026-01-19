@@ -32,6 +32,7 @@ export default {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      brand: '#19258a',
     },
     spacing: {
       px: '1px',
