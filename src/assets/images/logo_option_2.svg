@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <style>
+      .text { font-family: serif; font-weight: bold; font-size: 38px; fill: #1a202c; letter-spacing: 2px; }
+      .curve1 { fill: none; stroke: #0077CC; stroke-width: 4; }
+      .curve2 { fill: none; stroke: #63B3ED; stroke-width: 4; }
+    </style>
+  </defs>
+  <!-- Double Curve -->
+  <path class="curve1" d="M 30,45 C 100,10 300,10 370,45" />
+  <path class="curve2" d="M 40,52 C 110,17 290,17 360,52" />
+  <!-- Text -->
+  <text x="50%" y="90" text-anchor="middle" class="text">Broad Sky Tax</text>
+</svg>

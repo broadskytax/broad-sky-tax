@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <linearGradient id="skyGradient10" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0055AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00AACC;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .text { font-family: sans-serif; font-weight: 800; font-size: 40px; fill: #222; }
+      .arc { fill: url(#skyGradient10); }
+    </style>
+  </defs>
+  <!-- Text -->
+  <text x="50%" y="85" text-anchor="middle" class="text">Broad Sky Tax</text>
+  <!-- Sharp Tapered Arc: Peaks over Tax, sharp tips on both ends -->
+  <path class="arc" d="M 30,55 C 100,45 250,-15 320,-5 C 360,5 385,35 390,55 C 360,25 330,25 310,25 C 230,25 100,65 30,55 Z" />
+</svg>

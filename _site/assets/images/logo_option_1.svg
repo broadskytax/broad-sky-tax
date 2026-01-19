@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <style>
+      .text { font-family: sans-serif; font-weight: bold; font-size: 40px; fill: #333; }
+      .curve { fill: none; stroke: #0077CC; stroke-width: 6; stroke-linecap: round; }
+    </style>
+  </defs>
+  <!-- Simple Blue Curve -->
+  <path class="curve" d="M 20,40 Q 200,5 380,40" />
+  <!-- Text -->
+  <text x="50%" y="85" text-anchor="middle" class="text">BROAD SKY TAX</text>
+</svg>

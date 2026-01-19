@@ -2,6 +2,7 @@ import path from 'path';
 import { DateTime } from 'luxon';
 import htmlmin from 'html-minifier';
 import env from './src/_data/env.js';
+import markdownIt from 'markdown-it';
 
 // Load site data - since it's JSON and we are in ESM, we can use a dynamic import or readFileSync
 // For simplicity and compatibility with standard ESM, we'll use fs
@@ -22,6 +23,13 @@ export default function(eleventyConfig) {
     // Add a custom Nunjucks date filter
     eleventyConfig.addNunjucksFilter("date", function (dateString, format) {
         return DateTime.fromJSDate(dateString).toFormat(format);
+    });
+
+    const md = markdownIt({ html: true });
+    eleventyConfig.addFilter("markdown", (content) => md.render(content));
+
+    eleventyConfig.addCollection("sections", function(collectionApi) {
+        return collectionApi.getFilteredByGlob("src/sections/*.md");
     });
 
     eleventyConfig.addWatchTarget("./src/_includes/css/");

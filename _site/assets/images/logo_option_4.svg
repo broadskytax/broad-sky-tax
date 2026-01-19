@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <linearGradient id="skyGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0077CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4FD1C5;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .text { font-family: sans-serif; font-weight: bold; font-size: 40px; fill: #333; }
+      .arc { fill: url(#skyGradient4); }
+    </style>
+  </defs>
+  <!-- Text -->
+  <text x="50%" y="85" text-anchor="middle" class="text">Broad Sky Tax</text>
+  <!-- Tapered Arc Peaking over "Tax" (approx x=300) -->
+  <!-- Using a path to create a fillable shape that tapers -->
+  <path class="arc" d="M 50,45 Q 320,-20 380,45 Q 320,10 50,45 Z" />
+</svg>

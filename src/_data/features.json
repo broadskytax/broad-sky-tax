@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Personal Tax Returns",
+    "icon": "icon1.svg",
+    "content": "Expert preparation of individual income tax returns, ensuring you claim all eligible deductions and credits for maximum savings."
+  },
+  {
+    "title": "Partnership Tax Returns",
+    "icon": "icon2.svg",
+    "content": "Comprehensive tax services for partnerships (Form 1065), including Schedule K-1 preparation and compliance with complex regulations."
+  },
+  {
+    "title": "Financial Consultation",
+    "icon": "icon3.svg",
+    "content": "Strategic financial planning and consultation to help you navigate tax implications, investment decisions, and long-term wealth building."
+  },
+  {
+    "title": "IRS Audit Support",
+    "icon": "icon4.svg",
+    "content": "Professional representation and guidance in the event of an IRS audit, giving you peace of mind and expert defense."
+  }
+]
