@@ -3,4 +3,6 @@ layout: section.about.njk
 type: about
 title: About Us
 ---
-At Broad Sky Tax, we bring over **30 years of combined experience** to every tax return and consultation. Our team of certified accountants is dedicated to providing accurate, timely, and personalized service. Whether you need help with a simple personal return or complex partnership filings, we have the expertise to guide you through the tax landscape with confidence.
+Broad Sky Tax is a boutique tax service and consulting firm specializing in providing top-quality taxation services to business owners and high-net-worth individuals. 
+
+Our services include annual filings, planning, financial projections, tax optimization, and consulting. Our team is comprised of CPAs and IRS Enrolled Agents with decades of experience in public accounting and taxation.
