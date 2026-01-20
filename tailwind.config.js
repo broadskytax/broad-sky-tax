@@ -247,6 +247,7 @@ export default {
     },
     fontFamily: {
       sans: [
+        'Aptos',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

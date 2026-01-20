@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Aptos';
+  src: local('Aptos'), local('Aptos-Regular'), url('https://fonts.cdnfonts.com/s/93684/Aptos.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: local('Aptos Bold'), local('Aptos-Bold'), url('https://fonts.cdnfonts.com/s/93684/Aptos-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: 'Aptos', sans-serif;
+}
+
 *,
 *::before,
 *::after {
